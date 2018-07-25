@@ -13,6 +13,30 @@
     margin: 25px;
 }
 
-.n-child section:nth-child(2n+2) {
+.n-child section:nth-of-type(even) {
     border: solid 1px;
+}
+
+.n-type section:nth-of-type(odd) {
+    color: blue;
+}
+
+.first-of-type aside:first-of-type {
+    background-color: lime;
+}
+
+.first-of-type section:first-of-type {
+    background-color: purple;
+}
+
+.three section:nth-of-type(1n) {
+    background-color: orange;
+}
+
+.three section:first-child {
+    background-color: red;
+}
+
+.three section:last-child {
+    background-color: darkslategray;
 }
